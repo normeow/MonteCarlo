@@ -8,6 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using System.Globalization;
+using System.Resources;
+using System.Threading;
 
 namespace MonteCarlo
 {
@@ -18,8 +21,12 @@ namespace MonteCarlo
         private const int ox = 35;
         private const int k = 15;
 
+        private String modelstr;
+        private String pausestr;
+        private String contstr;
+        private String stopstr;
 
-        private Form1 parental;
+        private MainForm parental;
         private Shape a, b;
 
         private int numPoints;
@@ -52,13 +59,21 @@ namespace MonteCarlo
         private double sqrI, accPsbltA, accPsbltB, accPsbltAandB, accPsbltAorB;
         bool proc;
         Random rnd;
-        public Form2(Form1 p)
+        public Form2(MainForm p)
         {
+            //Thread.CurrentThread.CurrentUICulture = new CultureInfo("ru-RU");
             this.Height = 770;
             this.parental = p;
             this.numPoints = p.numPoints;
             curPoints = 0;
             InitializeComponent();
+
+            ResourceManager LocRM = new ResourceManager("MonteCarlo.Form2", typeof(Form2).Assembly);
+            modelstr = LocRM.GetString("model");
+            pausestr = LocRM.GetString("pause");
+            contstr = LocRM.GetString("cont");
+            stopstr = LocRM.GetString("stop");
+
             timer1.Interval = TIME_INTERVAL;
             trackBar1.Minimum = 1;
             trackBar1.Maximum = 400;
@@ -121,7 +136,7 @@ namespace MonteCarlo
         {
             if (timer1.Enabled)
                 timer1.Stop();
-            btnModel.Text = "Моделировать";
+            btnModel.Text = modelstr;
             btnStop.Enabled = false;
             proc = false;
             //отрисовать панель
@@ -167,17 +182,17 @@ namespace MonteCarlo
                 proc = false;
                 if (!checkBox1.Checked)
                     timer1.Stop();
-                btnModel.Text = "Продолжить";
+                btnModel.Text = contstr;
             }
             else {
 
-                if (btnModel.Text != "Продолжить")
+                if (btnModel.Text != contstr)
                 {
                     resetVls();
                     drawPanel.Refresh();
                 }
                 proc = true;
-                btnModel.Text = "Пауза";
+                btnModel.Text = pausestr;
                 btnStop.Enabled = true;
                 if (checkBox1.Checked)
                 {
@@ -294,7 +309,7 @@ namespace MonteCarlo
             if (curPoints == numPoints)
             {
                 timer1.Stop();
-                btnModel.Text = "Моделировать";
+                btnModel.Text = modelstr;
                 btnStop.Enabled = false;
                 resetVls();
                 MessageBox.Show("Done");

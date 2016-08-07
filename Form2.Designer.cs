@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.tbinAB = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
@@ -82,6 +83,7 @@
             // 
             // groupBox1
             // 
+            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Controls.Add(this.tbinAB);
             this.groupBox1.Controls.Add(this.label11);
             this.groupBox1.Controls.Add(this.tbinAorB);
@@ -90,83 +92,56 @@
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.tbinA);
             this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Location = new System.Drawing.Point(692, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(315, 160);
-            this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Попало в область";
             // 
             // tbinAB
             // 
-            this.tbinAB.Location = new System.Drawing.Point(141, 121);
+            resources.ApplyResources(this.tbinAB, "tbinAB");
             this.tbinAB.Name = "tbinAB";
             this.tbinAB.ReadOnly = true;
-            this.tbinAB.Size = new System.Drawing.Size(168, 26);
-            this.tbinAB.TabIndex = 1;
             // 
             // label11
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(18, 124);
+            resources.ApplyResources(this.label11, "label11");
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(48, 20);
-            this.label11.TabIndex = 2;
-            this.label11.Text = "A и B";
             // 
             // tbinAorB
             // 
-            this.tbinAorB.Location = new System.Drawing.Point(141, 89);
+            resources.ApplyResources(this.tbinAorB, "tbinAorB");
             this.tbinAorB.Name = "tbinAorB";
             this.tbinAorB.ReadOnly = true;
-            this.tbinAorB.Size = new System.Drawing.Size(168, 26);
-            this.tbinAorB.TabIndex = 3;
             // 
             // label10
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(18, 92);
+            resources.ApplyResources(this.label10, "label10");
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(67, 20);
-            this.label10.TabIndex = 4;
-            this.label10.Text = "A или B";
             // 
             // tbinB
             // 
-            this.tbinB.Location = new System.Drawing.Point(141, 57);
+            resources.ApplyResources(this.tbinB, "tbinB");
             this.tbinB.Name = "tbinB";
             this.tbinB.ReadOnly = true;
-            this.tbinB.Size = new System.Drawing.Size(168, 26);
-            this.tbinB.TabIndex = 5;
             // 
             // label9
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(18, 60);
+            resources.ApplyResources(this.label9, "label9");
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(20, 20);
-            this.label9.TabIndex = 6;
-            this.label9.Text = "B";
             // 
             // tbinA
             // 
-            this.tbinA.Location = new System.Drawing.Point(141, 25);
+            resources.ApplyResources(this.tbinA, "tbinA");
             this.tbinA.Name = "tbinA";
             this.tbinA.ReadOnly = true;
-            this.tbinA.Size = new System.Drawing.Size(168, 26);
-            this.tbinA.TabIndex = 7;
             // 
             // label8
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(18, 28);
+            resources.ApplyResources(this.label8, "label8");
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(20, 20);
-            this.label8.TabIndex = 8;
-            this.label8.Text = "A";
             // 
             // groupBox2
             // 
+            resources.ApplyResources(this.groupBox2, "groupBox2");
             this.groupBox2.Controls.Add(this.clcpAB);
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Controls.Add(this.clcpAorB);
@@ -175,83 +150,56 @@
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.clcpA);
             this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Location = new System.Drawing.Point(692, 178);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(315, 160);
-            this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Расчетная вероятность";
             // 
             // clcpAB
             // 
-            this.clcpAB.Location = new System.Drawing.Point(141, 121);
+            resources.ApplyResources(this.clcpAB, "clcpAB");
             this.clcpAB.Name = "clcpAB";
             this.clcpAB.ReadOnly = true;
-            this.clcpAB.Size = new System.Drawing.Size(168, 26);
-            this.clcpAB.TabIndex = 1;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(18, 124);
+            resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(51, 20);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "P(AB)";
             // 
             // clcpAorB
             // 
-            this.clcpAorB.Location = new System.Drawing.Point(141, 89);
+            resources.ApplyResources(this.clcpAorB, "clcpAorB");
             this.clcpAorB.Name = "clcpAorB";
             this.clcpAorB.ReadOnly = true;
-            this.clcpAorB.Size = new System.Drawing.Size(168, 26);
-            this.clcpAorB.TabIndex = 3;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(18, 92);
+            resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(60, 20);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "P(A+B)";
             // 
             // clcpB
             // 
-            this.clcpB.Location = new System.Drawing.Point(141, 57);
+            resources.ApplyResources(this.clcpB, "clcpB");
             this.clcpB.Name = "clcpB";
             this.clcpB.ReadOnly = true;
-            this.clcpB.Size = new System.Drawing.Size(168, 26);
-            this.clcpB.TabIndex = 5;
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(18, 60);
+            resources.ApplyResources(this.label3, "label3");
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(40, 20);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "P(B)";
             // 
             // clcpA
             // 
-            this.clcpA.Location = new System.Drawing.Point(141, 25);
+            resources.ApplyResources(this.clcpA, "clcpA");
             this.clcpA.Name = "clcpA";
             this.clcpA.ReadOnly = true;
-            this.clcpA.Size = new System.Drawing.Size(168, 26);
-            this.clcpA.TabIndex = 7;
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(18, 28);
+            resources.ApplyResources(this.label4, "label4");
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(40, 20);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "P(A)";
             // 
             // groupBox3
             // 
+            resources.ApplyResources(this.groupBox3, "groupBox3");
             this.groupBox3.Controls.Add(this.tbErAB);
             this.groupBox3.Controls.Add(this.label5);
             this.groupBox3.Controls.Add(this.tbErAorB);
@@ -260,83 +208,56 @@
             this.groupBox3.Controls.Add(this.label7);
             this.groupBox3.Controls.Add(this.tbErA);
             this.groupBox3.Controls.Add(this.label12);
-            this.groupBox3.Location = new System.Drawing.Point(692, 344);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(315, 160);
-            this.groupBox3.TabIndex = 0;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Относительная погрешность, %";
             // 
             // tbErAB
             // 
-            this.tbErAB.Location = new System.Drawing.Point(141, 121);
+            resources.ApplyResources(this.tbErAB, "tbErAB");
             this.tbErAB.Name = "tbErAB";
             this.tbErAB.ReadOnly = true;
-            this.tbErAB.Size = new System.Drawing.Size(168, 26);
-            this.tbErAB.TabIndex = 1;
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(18, 124);
+            resources.ApplyResources(this.label5, "label5");
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(51, 20);
-            this.label5.TabIndex = 2;
-            this.label5.Text = "P(AB)";
             // 
             // tbErAorB
             // 
-            this.tbErAorB.Location = new System.Drawing.Point(141, 89);
+            resources.ApplyResources(this.tbErAorB, "tbErAorB");
             this.tbErAorB.Name = "tbErAorB";
             this.tbErAorB.ReadOnly = true;
-            this.tbErAorB.Size = new System.Drawing.Size(168, 26);
-            this.tbErAorB.TabIndex = 3;
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(18, 92);
+            resources.ApplyResources(this.label6, "label6");
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(60, 20);
-            this.label6.TabIndex = 4;
-            this.label6.Text = "P(A+B)";
             // 
             // tbErB
             // 
-            this.tbErB.Location = new System.Drawing.Point(141, 57);
+            resources.ApplyResources(this.tbErB, "tbErB");
             this.tbErB.Name = "tbErB";
             this.tbErB.ReadOnly = true;
-            this.tbErB.Size = new System.Drawing.Size(168, 26);
-            this.tbErB.TabIndex = 5;
             // 
             // label7
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(18, 60);
+            resources.ApplyResources(this.label7, "label7");
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(40, 20);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "P(B)";
             // 
             // tbErA
             // 
-            this.tbErA.Location = new System.Drawing.Point(141, 25);
+            resources.ApplyResources(this.tbErA, "tbErA");
             this.tbErA.Name = "tbErA";
             this.tbErA.ReadOnly = true;
-            this.tbErA.Size = new System.Drawing.Size(168, 26);
-            this.tbErA.TabIndex = 7;
             // 
             // label12
             // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(18, 28);
+            resources.ApplyResources(this.label12, "label12");
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(40, 20);
-            this.label12.TabIndex = 8;
-            this.label12.Text = "P(A)";
             // 
             // groupBox4
             // 
+            resources.ApplyResources(this.groupBox4, "groupBox4");
             this.groupBox4.Controls.Add(this.tbSqrAB);
             this.groupBox4.Controls.Add(this.label13);
             this.groupBox4.Controls.Add(this.tbSqrAorB);
@@ -345,113 +266,73 @@
             this.groupBox4.Controls.Add(this.label15);
             this.groupBox4.Controls.Add(this.tbSqrA);
             this.groupBox4.Controls.Add(this.label16);
-            this.groupBox4.Location = new System.Drawing.Point(692, 507);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(315, 160);
-            this.groupBox4.TabIndex = 0;
             this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Расчетная площадь";
             // 
             // tbSqrAB
             // 
-            this.tbSqrAB.Location = new System.Drawing.Point(141, 121);
+            resources.ApplyResources(this.tbSqrAB, "tbSqrAB");
             this.tbSqrAB.Name = "tbSqrAB";
             this.tbSqrAB.ReadOnly = true;
-            this.tbSqrAB.Size = new System.Drawing.Size(168, 26);
-            this.tbSqrAB.TabIndex = 1;
             // 
             // label13
             // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(18, 124);
+            resources.ApplyResources(this.label13, "label13");
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(52, 20);
-            this.label13.TabIndex = 2;
-            this.label13.Text = "S(AB)";
             // 
             // tbSqrAorB
             // 
-            this.tbSqrAorB.Location = new System.Drawing.Point(141, 89);
+            resources.ApplyResources(this.tbSqrAorB, "tbSqrAorB");
             this.tbSqrAorB.Name = "tbSqrAorB";
             this.tbSqrAorB.ReadOnly = true;
-            this.tbSqrAorB.Size = new System.Drawing.Size(168, 26);
-            this.tbSqrAorB.TabIndex = 3;
             // 
             // label14
             // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(18, 92);
+            resources.ApplyResources(this.label14, "label14");
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(61, 20);
-            this.label14.TabIndex = 4;
-            this.label14.Text = "S(A+B)";
             // 
             // tbSqrB
             // 
-            this.tbSqrB.Location = new System.Drawing.Point(141, 57);
+            resources.ApplyResources(this.tbSqrB, "tbSqrB");
             this.tbSqrB.Name = "tbSqrB";
             this.tbSqrB.ReadOnly = true;
-            this.tbSqrB.Size = new System.Drawing.Size(168, 26);
-            this.tbSqrB.TabIndex = 5;
             // 
             // label15
             // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(18, 60);
+            resources.ApplyResources(this.label15, "label15");
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(41, 20);
-            this.label15.TabIndex = 6;
-            this.label15.Text = "S(B)";
             // 
             // tbSqrA
             // 
-            this.tbSqrA.Location = new System.Drawing.Point(141, 25);
+            resources.ApplyResources(this.tbSqrA, "tbSqrA");
             this.tbSqrA.Name = "tbSqrA";
             this.tbSqrA.ReadOnly = true;
-            this.tbSqrA.Size = new System.Drawing.Size(168, 26);
-            this.tbSqrA.TabIndex = 7;
             // 
             // label16
             // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(18, 28);
+            resources.ApplyResources(this.label16, "label16");
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(41, 20);
-            this.label16.TabIndex = 8;
-            this.label16.Text = "S(A)";
             // 
             // btnStop
             // 
-            this.btnStop.Location = new System.Drawing.Point(857, 709);
+            resources.ApplyResources(this.btnStop, "btnStop");
             this.btnStop.Name = "btnStop";
-            this.btnStop.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnStop.Size = new System.Drawing.Size(150, 35);
-            this.btnStop.TabIndex = 4;
-            this.btnStop.Text = "Стоп";
             this.btnStop.UseVisualStyleBackColor = true;
             this.btnStop.Click += new System.EventHandler(this.btnStop_Click);
             // 
             // btnModel
             // 
-            this.btnModel.Location = new System.Drawing.Point(692, 709);
+            resources.ApplyResources(this.btnModel, "btnModel");
             this.btnModel.Name = "btnModel";
-            this.btnModel.Size = new System.Drawing.Size(150, 35);
-            this.btnModel.TabIndex = 4;
-            this.btnModel.Text = "Моделировать";
             this.btnModel.UseVisualStyleBackColor = true;
             this.btnModel.Click += new System.EventHandler(this.btnModel_Click);
             // 
             // drawPanel
             // 
-            this.drawPanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            resources.ApplyResources(this.drawPanel, "drawPanel");
             this.drawPanel.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.drawPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.drawPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.drawPanel.Enabled = false;
-            this.drawPanel.Location = new System.Drawing.Point(13, 12);
             this.drawPanel.Name = "drawPanel";
-            this.drawPanel.Size = new System.Drawing.Size(655, 655);
-            this.drawPanel.TabIndex = 2;
             this.drawPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.drawPanel_Paint);
             // 
             // timer1
@@ -460,47 +341,32 @@
             // 
             // label17
             // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(710, 676);
+            resources.ApplyResources(this.label17, "label17");
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(124, 20);
-            this.label17.TabIndex = 2;
-            this.label17.Text = "Точек брошено";
             // 
             // tbPnts
             // 
-            this.tbPnts.Location = new System.Drawing.Point(833, 673);
+            resources.ApplyResources(this.tbPnts, "tbPnts");
             this.tbPnts.Name = "tbPnts";
             this.tbPnts.ReadOnly = true;
-            this.tbPnts.Size = new System.Drawing.Size(168, 26);
-            this.tbPnts.TabIndex = 1;
             // 
             // trackBar1
             // 
-            this.trackBar1.Location = new System.Drawing.Point(13, 676);
+            resources.ApplyResources(this.trackBar1, "trackBar1");
             this.trackBar1.Name = "trackBar1";
-            this.trackBar1.Size = new System.Drawing.Size(655, 69);
-            this.trackBar1.TabIndex = 5;
             this.trackBar1.Scroll += new System.EventHandler(this.trackBar1_Scroll);
             // 
             // checkBox1
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(24, 715);
+            resources.ApplyResources(this.checkBox1, "checkBox1");
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(235, 24);
-            this.checkBox1.TabIndex = 6;
-            this.checkBox1.Text = "Не пересчитывать ячейки";
             this.checkBox1.UseVisualStyleBackColor = true;
             this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // Form2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.AutoSize = true;
-            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(1023, 756);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.trackBar1);
             this.Controls.Add(this.tbPnts);
@@ -515,7 +381,6 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form2";
-            this.Text = "Графическая иллюстрация метода Монте-Карло";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form2_FormClosed);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
