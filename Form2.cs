@@ -58,6 +58,7 @@ namespace MonteCarlo
 
         private double sqrI, accPsbltA, accPsbltB, accPsbltAandB, accPsbltAorB;
         bool proc;
+        bool dontupdatecells;
         Random rnd;
         public Form2(MainForm p)
         {
@@ -90,6 +91,7 @@ namespace MonteCarlo
 
             int m = p.areaI.width() > p.areaI.height() ? p.areaI.width() : p.areaI.height();
             btnStop.Enabled = false;
+            dontupdatecells = checkBox1.Checked;
         }
         
 
@@ -156,7 +158,7 @@ namespace MonteCarlo
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-
+            dontupdatecells = checkBox1.Checked;
         }
 
         private void DrawAreas()
@@ -194,16 +196,7 @@ namespace MonteCarlo
                 proc = true;
                 btnModel.Text = pausestr;
                 btnStop.Enabled = true;
-                if (checkBox1.Checked)
-                {
-                    resetVls();
-                    for (;  curPoints < numPoints;)
-                        calculate();
-                    fillTbs();
-                }
-                else {
-                    timer1.Start();
-                }
+                timer1.Start();
             }
 
 
@@ -304,13 +297,15 @@ namespace MonteCarlo
         private void timer1_Tick(object sender, EventArgs e)
         {
             calculate();
-            fillTbs();
+            if (!dontupdatecells)
+                fillTbs();
             
             if (curPoints == numPoints)
             {
                 timer1.Stop();
                 btnModel.Text = modelstr;
                 btnStop.Enabled = false;
+                fillTbs();
                 resetVls();
                 MessageBox.Show("Done");
             }
